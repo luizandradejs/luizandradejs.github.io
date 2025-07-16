@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Luiz da Silva Andrade</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Custom styles to integrate with Tailwind */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-center text-slate-800 mb-2;
+        }
+        .section-subtitle {
+            @apply text-center text-slate-500 mb-12;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-800">José Luiz Andrade</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#sobre" class="text-slate-600 hover:text-blue-600 transition">Sobre</a>
+                <a href="#tecnologias" class="text-slate-600 hover:text-blue-600 transition">Tecnologias</a>
+                <a href="#projetos" class="text-slate-600 hover:text-blue-600 transition">Projetos</a>
+                <a href="#experiencia" class="text-slate-600 hover:text-blue-600 transition">Experiência</a>
+                <a href="#contato" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contato</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#sobre" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Sobre</a>
+            <a href="#tecnologias" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Tecnologias</a>
+            <a href="#projetos" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Projetos</a>
+            <a href="#experiencia" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Experiência</a>
+            <a href="#contato" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="sobre" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight">Desenvolvedor de Software</h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
+                    Formado em Análise e Desenvolvimento de Sistemas e em transição de carreira, uno minha sólida experiência em suporte e resolução de problemas com a paixão por criar soluções de software eficientes e intuitivas.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="https://www.linkedin.com/in/luizandradejs" target="_blank" class="text-blue-600 hover:text-blue-800 transition text-3xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/luizandradejs" target="_blank" class="text-slate-800 hover:text-black transition text-3xl"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section id="tecnologias" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Principais Tecnologias</h2>
+                <p class="section-subtitle">Ferramentas e tecnologias que utilizo para transformar ideias em realidade.</p>
+                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 text-center">
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fab fa-react text-5xl text-sky-500"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fab fa-node-js text-5xl text-green-500"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                         <svg class="h-12 w-12" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Next.js</title><path d="M12 0L24 12 12 24 0 12 12 0zM12 2.37L2.37 12 12 21.63 21.63 12 12 2.37zM12 4.333l-1.333 2.227v11.01l1.333 2.097 1.333-2.097V6.56L12 4.333zM8.667 7.44l-1.334 2.227v4.837l1.334 2.226z"/></svg>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fab fa-js-square text-5xl text-yellow-400"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fab fa-html5 text-5xl text-orange-500"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i class="fab fa-css3-alt text-5xl text-blue-500"></i>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <p class="section-subtitle">Uma seleção de projetos que demonstram minhas habilidades.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Ignite Shop</h3>
+                            <p class="text-sm text-slate-600 mb-4">E-commerce de camisetas desenvolvido com Next.js, utilizando Stitches para estilização e Stripe para pagamentos. Foco em performance e experiência do usuário.</p>
+                            <a href="https://github.com/luizandradejs/ignite-shop" target="_blank" class="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-800 transition">
+                                Ver no GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">NLW Expert Notes</h3>
+                            <p class="text-sm text-slate-600 mb-4">Aplicação de notas em React com transcrição de áudio para texto usando a Web Speech API. Interface moderna construída com Tailwind CSS.</p>
+                            <a href="https://github.com/luizandradejs/nlw-expert-notes" target="_blank" class="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-800 transition">
+                                Ver no GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">API Lista de Tarefas</h3>
+                            <p class="text-sm text-slate-600 mb-4">API RESTful para um gerenciador de tarefas construída com Node.js e Fastify. Utiliza streams para importação de tarefas via CSV.</p>
+                            <a href="https://github.com/luizandradejs/api-lista-tarefas-node" target="_blank" class="inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-800 transition">
+                                Ver no GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experiencia" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Experiência Profissional</h2>
+                <p class="section-subtitle">Minha trajetória profissional antes da transição para a área de tecnologia.</p>
+                <div class="relative border-l-2 border-slate-200 pl-10">
+                    <!-- Experience Item 1 -->
+                    <div class="mb-10">
+                        <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-blue-600"></div>
+                        <p class="text-sm font-semibold text-blue-600">04/2023 - 12/2023</p>
+                        <h3 class="text-lg font-bold text-slate-800">Atendimento | NEO BPO</h3>
+                        <p class="text-slate-600">Suporte a clientes no setor de energia, resolvendo problemas técnicos e gerenciando processos críticos como desligamento e religamento.</p>
+                    </div>
+                    <!-- Experience Item 2 -->
+                    <div class="mb-10">
+                        <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-blue-600"></div>
+                        <p class="text-sm font-semibold text-blue-600">09/2021 - 05/2022</p>
+                        <h3 class="text-lg font-bold text-slate-800">Help Desk | TDGI S.A</h3>
+                        <p class="text-slate-600">Suporte técnico interno, manutenção de hardware e configuração de sistemas de TI e CFTV, garantindo a continuidade dos serviços.</p>
+                    </div>
+                    <!-- Experience Item 3 -->
+                    <div class="mb-10">
+                        <div class="absolute -left-3.5 mt-1.5 h-6 w-6 rounded-full bg-blue-600"></div>
+                        <p class="text-sm font-semibold text-blue-600">05/2015 - 12/2020</p>
+                        <h3 class="text-lg font-bold text-slate-800">Técnico e Vendas | Singo Assistência</h3>
+                        <p class="text-slate-600">Diagnóstico técnico, atendimento ao cliente, processos de venda, controle de estoque e relacionamento com fornecedores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contato" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Vamos Construir Algo Juntos?</h2>
+                <p class="section-subtitle max-w-xl mx-auto">Estou buscando ativamente por uma oportunidade como desenvolvedor. Se você tem uma vaga ou um projeto em mente, vamos conversar!</p>
+                <a href="mailto:luizandrade.js@gmail.com" class="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Enviar um E-mail
+                </a>
+                 <div class="mt-8 text-slate-600">
+                    <p>Ou me encontre por aqui:</p>
+                    <div class="mt-4 flex justify-center gap-6">
+                        <a href="https://www.linkedin.com/in/luizandradejs" target="_blank" class="text-blue-600 hover:text-blue-800 transition text-3xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/luizandradejs" target="_blank" class="text-slate-800 hover:text-black transition text-3xl"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-6 text-center">
+        <p>&copy; 2024 - Desenvolvido com <i class="fas fa-heart text-red-500"></i> por José Luiz Andrade</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
